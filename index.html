@@ -43,44 +43,33 @@
 <body>
 
 <header>
-  <h1>😂 Chistes cortos y random</h1>
-  <p>Ríe con chistes cortos, malos, de papá y programación</p>
+  <h1>😂 Chiste del momento</h1>
 </header>
 
 <div class="layout">
 
-  <aside class="ad ad-left" aria-label="Publicidad lateral izquierda">
-    Publicidad
-  </aside>
+  <aside class="ad ad-left">Publicidad</aside>
 
   <main>
-    <h2>Elige una categoría de chistes</h2>
-
-    <select id="categoria" aria-label="Seleccionar categoría de chistes">
-      <option value="cortos">Chistes cortos 😂</option>
-      <option value="malos">Chistes malos 🤦‍♂️</option>
-      <option value="programacion">Chistes de programación 💻</option>
+    <select id="categoria">
+      <option value="cortos">Cortos 😂</option>
+      <option value="malos">Malos 🤦‍♂️</option>
+      <option value="programacion">Programación 💻</option>
       <option value="papa">Chistes de papá 👨‍🦳</option>
     </select>
 
-    <div id="chiste" class="chiste" aria-live="polite"></div>
-
-    <button id="nuevo" aria-label="Mostrar otro chiste">
-      Otro chiste 😂
-    </button>
+    <div id="chiste" class="chiste"></div>
+    <button id="nuevo">Otro chiste 😂</button>
   </main>
 
-  <aside class="ad ad-right" aria-label="Publicidad lateral derecha">
-    Publicidad
-  </aside>
+  <aside class="ad ad-right">Publicidad</aside>
 
 </div>
 
 <footer>
-  <p>© 2026 Chistes Random · Humor gratis en español</p>
+  © 2026 Chistes random
 </footer>
 
-<script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>
-
