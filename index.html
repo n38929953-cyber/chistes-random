@@ -2,41 +2,83 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Chistes cortos random 😂</title>
-  <meta name="description" content="Chistes cortos y random para reír todos los días.">
+
+  <!-- SEO básico -->
+  <link rel="icon" href="83a485bb-beed-4569-b90d-8dbf46d465aa.png" type="image/x-icon">
+  <title>Chistes cortos y malos 😂 | Chistes random para reír gratis</title>
+  <meta name="description" content="Chistes cortos, chistes malos, chistes de papá y de programación. Ríe gratis con chistes random actualizados todos los días 😂">
+  <meta name="keywords" content="chistes cortos, chistes malos, chistes de papá, chistes de programación, chistes random, humor">
+  <meta name="author" content="Chistes Random">
+  <meta name="robots" content="index, follow">
+
+  <!-- Responsive -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph (para compartir) -->
+  <meta property="og:title" content="Chistes random 😂 | Cortos, malos y de papá">
+  <meta property="og:description" content="La mejor web de chistes cortos y malos para reír todos los días 😂">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Datos estructurados (Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Chistes Random",
+    "description": "Chistes cortos, malos, de papá y de programación",
+    "inLanguage": "es",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Chistes Random"
+    }
+  }
+  </script>
 </head>
+
 <body>
 
 <header>
-  <h1>😂 Chiste del momento</h1>
+  <h1>😂 Chistes cortos y random</h1>
+  <p>Ríe con chistes cortos, malos, de papá y programación</p>
 </header>
 
 <div class="layout">
 
-  <aside class="ad ad-left">Publicidad</aside>
+  <aside class="ad ad-left" aria-label="Publicidad lateral izquierda">
+    Publicidad
+  </aside>
 
   <main>
-    <select id="categoria">
-      <option value="cortos">Cortos 😂</option>
-      <option value="malos">Malos 🤦‍♂️</option>
-      <option value="programacion">Programación 💻</option>
+    <h2>Elige una categoría de chistes</h2>
+
+    <select id="categoria" aria-label="Seleccionar categoría de chistes">
+      <option value="cortos">Chistes cortos 😂</option>
+      <option value="malos">Chistes malos 🤦‍♂️</option>
+      <option value="programacion">Chistes de programación 💻</option>
       <option value="papa">Chistes de papá 👨‍🦳</option>
     </select>
 
-    <div id="chiste" class="chiste"></div>
-    <button id="nuevo">Otro chiste 😂</button>
+    <div id="chiste" class="chiste" aria-live="polite"></div>
+
+    <button id="nuevo" aria-label="Mostrar otro chiste">
+      Otro chiste 😂
+    </button>
   </main>
 
-  <aside class="ad ad-right">Publicidad</aside>
+  <aside class="ad ad-right" aria-label="Publicidad lateral derecha">
+    Publicidad
+  </aside>
 
 </div>
 
 <footer>
-  © 2026 Chistes random
+  <p>© 2026 Chistes Random · Humor gratis en español</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
